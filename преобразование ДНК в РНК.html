@@ -1,0 +1,23 @@
+<script type="text/javascript">
+	const dna = (str)=>{
+		const leng = str.length-1;
+		let finishstr='';
+		for (var i = 0; i<=leng; i++) {
+			if(str[i]==='C'){
+				finishstr= finishstr+'G';
+			}
+			else if(str[i]==='G'){
+				finishstr= finishstr+'C';
+			}
+			else if(str[i]==='T'){
+				finishstr= finishstr+'A';
+			}
+			else if(str[i]==='A'){
+				finishstr= finishstr+'U';
+			}else{ return "null"}
+
+		}
+	return finishstr;
+};
+console.log(dna('ACTG'))
+</script>

@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	const sumOfSquareDigits = (n)=>{
+		let str = String(n);
+		let leng = str.length-1;
+		let result=0;
+		for (let i =0; i<=leng;i++){
+			result+=(Number(str[i]))**2;
+		};
+		return result;
+	};
+	//console.log(sumOfSquareDigits(49))
+const lucky = (n)=>{
+	if(n===4){
+		return 'false';
+	}
+	if(n===1){
+		return 'true';
+	}else{
+		return lucky(sumOfSquareDigits(n),n);
+	}
+	//if(n!=1){
+		return 'false';
+	//}
+
+};
+console.log(lucky(3));
+</script>

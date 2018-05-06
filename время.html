@@ -1,0 +1,29 @@
+<script>
+
+const time =(n)=>{
+	if(n<60){
+	return n>=10? '00:'+n : '00:0'+n; 	
+ 	}
+	
+
+	if(n%60===0){
+	const t = n/60;	
+	//return (`0${t}:00`)
+	if(t>=10){
+	return  (`${t}:00`);
+	}else if (t<10){
+	return (`0${t}:00`);
+	}
+	}
+
+	
+
+
+	if(n%60!=0){
+	const hour= Math.floor(n/60)
+	const minut = n-(hour*60);
+	return minut>=10&& hour>=10? (`${hour}:${minut}`):(`0${hour}:0${minut}`)
+	}
+}
+alert(time(45))
+</script>

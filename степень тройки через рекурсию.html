@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	const threeReverse = (n)=>{
+		if (n%3===0){
+			return threeReverse(n/3, n);
+		}else if (n===1){
+			return 'True';
+		}else{
+			return 'False';
+		}
+
+	};
+	let c= prompt('Введите число:')
+	alert(threeReverse(c));
+</script>

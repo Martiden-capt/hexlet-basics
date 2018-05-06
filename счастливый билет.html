@@ -1,0 +1,11 @@
+<script type="text/javascript">
+	const happyticket = (arg) =>{
+		const str = String(arg);
+		if(Number(str[0])+Number(str[1])+Number(str[2])===Number(str[3])+Number(str[4])+Number(str[5])){
+			return "Счастливый";
+		}else{
+			return "Не счастливый";
+		}
+	};
+console.log(happyticket(128722));
+</script>

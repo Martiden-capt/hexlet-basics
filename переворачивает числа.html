@@ -1,0 +1,14 @@
+<script>
+const reverse =(n)=>{
+const str = String(n);
+
+let leng= str.length -1;
+let result = "";
+while(leng >=0){
+	result = result+str[leng];
+	leng--;
+}
+return result;
+};
+alert(reverse(13));
+</script>
